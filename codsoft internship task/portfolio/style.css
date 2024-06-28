@@ -1,0 +1,588 @@
+body{
+    margin: 0;
+}
+.header-section{
+    background-color: rgba(216, 97, 28, 0.495);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.left-section .logo{
+    background-color: rgba(236, 235, 242, 0.585);
+    font-size: 26px;
+    font-family: Arial;
+    margin-right: 20px;
+}
+.logo-design{
+    color: rgba(241, 33, 10, 0.549);
+}
+.right-section{
+   background-color: rgb(255, 255, 255);
+}
+ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+ul li{
+    float: left;
+}
+ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+a.lihover:hover{
+    background: linear-gradient(to right, rgb(61, 106, 255) 0%, rgb(174, 0, 255) 100%);
+    color: rgb(225, 41, 41);
+    transition: 0.3s;
+}
+a:active{
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 400px){
+    .header-section{
+        width: 100%;
+        padding: 0;
+    }
+    .left-section{
+        padding: 20px;
+    }
+    .left-section .logo{
+        font-size: 21px;
+        font-family: Arial;
+        margin-right: 20px;
+    }
+    .right-section{
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        float: none;
+    }
+}
+
+/*Home - Container - Design*/
+
+.home-container{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+}
+.sub-container{
+    margin-top: 50px;
+    width: 500px;
+    height: 400px;
+}
+.mytitle{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.my-content{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 80px;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.myname{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.mylocation{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+.myname{
+    color: rgba(160,10,241);
+}
+.title{
+    color: rgb(160, 10, 241);
+}
+.my-details-container .download-btn{
+    background-color: rgb(160, 10, 241);
+    color: white;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 80px;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.13);
+    font-size: 20px;
+}
+.download-btn:hover{
+    background-color: rgb(125, 12, 186);
+    transition: 0.3s;
+}
+.download-btn:active{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.13);
+    transform: translateX(2px) translateY(2px);
+    opacity: 1.8;
+}
+.my-image-1{
+    width: 400px;
+    height: 400px;
+    transition: transform 0.5s;
+    position: absolute;
+    margin-left: 15px;
+}
+.my-image-1:hover{
+    transform: scale(1.1);
+}
+.img-container{
+    margin-top: 40px;
+}
+/*Media element for home container***************/
+@media screen and (max-width: 400px){
+    .home-container{
+        width: 100%;
+        height: 600px;
+        display: block;
+    }
+    .my-details{
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .my-image-1{
+       margin-top: 10px;
+    }
+    .my-details-container .mytitle{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .my-content{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .myname{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .mylocation{
+        margin: 0;
+        text-align: center;
+    }
+    .my-details-container .download-btn{
+        margin: 0;
+        margin-left: 100px;
+    }
+    .sub-container{
+        height: 200px;
+    }
+    .img-container{
+        height: 290px;
+        
+    }
+    .my-image-1{
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+    }
+}
+/************Header Navigation Floating Button********************************************/
+
+.nav-floating-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    float: right;
+    position: fixed;
+    bottom: 15px;
+    right: 0;
+    margin-right: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.13);
+}
+.nav-floating-btn i{
+    font-size: 20px;
+    color: white;
+}
+
+/**Media element for navigation button**/
+@media screen and (max-width: 400px){
+    .nav-floating-btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(255, 0, 0);
+        float: right;
+        position: fixed;
+        bottom: 10px;
+        left: 300px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.13);
+    }
+    .nav-floating-btn i{
+        font-size: 18px;
+        color: white;
+    }
+}
+.section-title{
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 350px;
+}
+.abu-sub-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+    font-size: 26px;
+}
+.about-section{
+    background-color: rgb(255, 255, 255);
+}
+.about-container{
+    background-color: rgb(255, 255, 255);
+}
+.about-sub{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 2rem 2rem;
+    vertical-align: middle;
+}
+.img-container-2{
+    margin-left: 50px;
+}
+.my-image-2{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.my-image-2:hover{
+    transform: scale(1.1);
+}   
+/*Flip-card Design---------------------------------*/
+
+.about-card{
+    background-color: transparent;
+    width: 780px;
+    height: 450px;
+    perspective: 1000px;
+}
+.about-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.about-card:hover .about-card-inner{
+    transform: rotateY(180deg);
+}
+.about-card-front, .about-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.about-card-front{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.about-card-back{
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.aboutme-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 26px;
+}
+.aboutme-content{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding-left: 100px;
+    padding-top: 2px;
+    font-size: 20px;
+}
+.aboutme-content-exp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+.year-design{
+    color: rgb(255, 0, 60);
+}
+
+/*Media element of about **********************/
+
+@media screen and (max-width: 400px){
+    .section-title{
+        margin-top: 80px;
+    }
+    .my-image-2{
+        width: 285px;
+        height: 430px;
+    }
+    .img-container-2{
+        margin: 0;
+    }
+    .abu-sub-title{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .about-card{
+        background-color: transparent;
+        width: 285px;
+        height: 550px;
+        perspective: 1000px;
+    }
+    .aboutme-content{
+        font-size: 16px;
+        margin-top: 6px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .year-design{
+        color: rgb(0, 255, 60);
+    }
+    .aboutme-content-exp{
+        padding-top: 10px;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+.skill-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 180px;
+ }
+ .parent-div-skills{
+     height: 520px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+ }
+ .child-div-skills{
+     background-color: rgb(255, 255, 255);
+     display: inline-block;
+     justify-content: center;
+     width: 280px;
+     height: 280px;
+     font-family: Arial, Helvetica, sans-serif;
+     border-radius: 10px;
+     margin-top: -30px;
+     transition: width 0.5s, height 0.5s, background-color 0.5s, color 0.5s;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+ }
+ .technical-title{
+     text-align: center;
+     font-weight: 600;
+     font-size: 18px;
+ }
+ .technical-content{
+     padding-left: 50px;
+     font-size: 12px;
+ }
+ .child-div-skills:hover{
+     width: 450px;
+     height: 450px;
+     transition: 0.5s;
+     background-color: black;
+     color: white;
+ }
+ .child-div-skills:hover .technical-title{
+     font-size:26px;
+ }
+ .child-div-skills:hover .technical-content{
+     font-size:20px;
+     margin-left: 30px;
+ }
+ 
+ /**Media Element in skills*********************************************/
+ @media screen and (max-width: 400px){
+ .parent-div-skills{
+     display: block;
+     height: 850px;
+     padding: 50px;
+ }
+ .child-div-skills{
+     width: 230px;
+     height: 300px;
+     margin-top: 80px;
+ }
+ .child-div-skills:hover{
+     width: 280px;
+     height: 350px;
+     transition: 0.5s;
+     background-color: black;
+     color: white;
+ }
+ .technical-title{
+     font-size:20px;
+ }
+ .technical-content{
+     font-size:13px;
+     padding-left: 10px;
+ }
+ }
+ .project-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 150px;
+}
+.box-area{
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper{
+    padding: 10px 10%;
+}
+#card-area{
+    padding: 50px 0;
+}
+.box {
+    width: 320px;
+    height: 500px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+    width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    object-fit: cover;
+}
+.overlay {
+	width: 320px;
+	height: 0;
+	background: linear-gradient(transparent,#ff004f 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	font-size: 10px;
+	transition: height 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 75%;
+	font-size: 20px;
+	letter-spacing: 2px;
+    color: white;
+	text-align: center;
+}
+.overlay p{
+   color: white;
+   font-size: 16px;
+   text-align: center;
+}
+.overlay a {
+	color: #262626;
+	text-decoration: none;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+    font-weight: 600;
+	margin-left: 100px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+/**Media element for projects*********************************************/
+
+@media screen and (max-width: 400px){
+	.project-title{
+		margin-top: 150px;
+	}
+	.box-area{
+		margin-top: 20px;
+		display: block;
+	}
+	.box img{
+		width: 280px;
+        height: 450px;
+	}
+	.overlay{
+		width: 280px;
+	}
+	.overlay h3{
+		font-size: 20px;
+		text-align: center;
+	}
+	.overlay p{
+		font-size: 16px;
+	}
+	.overlay a{
+		font-size: 13px;
+		font-weight: 600;
+		margin-left: 90px;
+	}
+	.box{
+		width: 280px;
+        height: 450px;
+		margin-bottom: 60px;
+	}
+}
+.linkdein{
+    width: 250px;
+}
